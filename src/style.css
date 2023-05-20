@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Sigmar&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --text: #635352;
+}
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 100dvw;
+    min-height: 100dvh;
+    overflow: hidden;
+}
+
+/*HEADER*/
+.content_header {
+    display: flex;
+    justify-content: space-evenly;
+    /*betwen com  max-width: 1440px; */
+    align-items: center;
+
+    column-gap: 3em;
+
+    padding: 1.5em;
+    /*max-width: 1440px;*/
+    width: 100%;
+
+    margin-inline: auto;
+
+    background: rgba(59, 32, 11, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+figure{
+    box-shadow: 0px 0px 5px 0px rgb(48, 48, 46); 
+}
+
+button {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    gap: 2em;
+
+    list-style: none;
+
+    animation: bounceInLeft;
+    animation-duration: 4s;
+
+    cursor: pointer;
+}
+
+.navigation a {
+    font-family: 'inter';
+    color: var(--text);
+    font-size: 1.8em;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+
+.navigation:hover {
+    transform: 1;
+    transform: translateY(-5px);
+}
+
+.navigation_socials {
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+}
+
+
+.navigation_btn {
+    background: #F59A1B;
+    padding: 0.1em;
+    border-radius: 4px;
+    width: 12em;
+    cursor: pointer;
+
+    border: 0.2em solid rgb(255, 166, 0);
+    box-shadow: 0px 5px 5px 0px rgb(181, 122, 13);
+
+}
+
+.navigation_btn a {
+    font-family: 'inter';
+    text-decoration: none;
+    color: #34201F;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+
+.navigation_btn p {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.navigation_btn:hover {
+    background: transparent;
+    transition: 2s;
+}
+
+
+@media (max-width: 600px) {
+    .navigation {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+
+        text-align: left;
+        margin-top: 5em;
+        background-color: rgb(244, 228, 209)
+    }
+
+
+    .navigation_socials {
+        display: none;
+    }
+
+    .navigation_btn {
+        display: none;
+    }
+
+    .navigation a {
+        display: grid;
+        place-items: center;
+        margin: 1em;
+
+        font-size: 2.5em;
+
+        font-weight: 400;
+
+        color: black;
+    }
+
+    #nav.active .navigation {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+
+
+    .line_separation {
+        border-bottom: 1px solid rgb(236, 196, 196);
+    }
+
+    #btn-mobile {
+        display: flex;
+
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+
+        margin-left: 3em;
+        color: #050505;
+
+        background: rgba(29, 6, 5, 0.15);
+        border-radius: 3px;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+/*HEADER*/
+
+/*MAIN*/
+/*CONTENT_KINGBURGER*/
+.content_kingburger {
+    background: url(./assets/banner-hero.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 100dvw;
+    height: 545px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3em;
+
+}
+
+.content_kingburger-written {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    animation: backInUp;
+    animation-duration: 3s;
+
+
+    margin-inline-start: 20em;
+}
+
+.content_kingburger-written__title {
+    font-family: 'inter';
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+
+
+.content_kingburger-written__title span {
+    font-family: 'Lilita One', cursive;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #F59A1B;
+    letter-spacing: -0.1em;
+}
+
+.content_kingburger-written__text {
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 2.5em;
+    color: #635352;
+}
+
+.content_kingburger-written__text span {
+    background: #F59A1B;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 5px 0px rgb(181, 122, 13);
+}
+
+.content_kingburger-btn {
+    background-color: #f43127;
+    padding: 1.2em;
+    width: 35%;
+    border-radius: 0.2em;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.content_kingburger-btn p {
+    font-family: 'inter';
+    color: rgb(247, 235, 214);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+@media (max-width: 480px) {
+    .content_kingburger {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2em;
+        /* height: ;*/
+        max-width: 100%;
+    }
+
+    .content_kingburger-written {
+        margin-inline-start: 0;
+        text-align: left;
+    }
+
+    .content_kingburger-written__title {
+        font-size: 2.5em;
+    }
+
+    .content_kingburger-written__title span {
+        font-size: 2.3em;
+    }
+
+    .content_kingburger-written__text {
+        font-size: 1.9em;
+    }
+
+    .content_kingburger-btn {
+        margin-top: 1.5em;
+        width: 60%;
+    }
+}
+/*CONTENT_KINGBURGER*/
+/*MAIN*/
