@@ -12,7 +12,6 @@
     --text: #635352;
 }
 
-
 #app {
     display: flex;
     flex-direction: column;
@@ -21,6 +20,7 @@
     min-width: 100dvw;
     min-height: 100dvh;
     overflow: hidden;
+    background-color: #fff5f4;
 }
 
 /*HEADER*/
@@ -42,8 +42,8 @@
     backdrop-filter: blur(5px);
 }
 
-figure{
-    box-shadow: 0px 0px 5px 0px rgb(48, 48, 46); 
+figure {
+    box-shadow: 0px 0px 5px 0px rgb(48, 48, 46);
 }
 
 button {
@@ -105,7 +105,7 @@ button {
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
-    
+
 }
 
 .navigation_btn p {
@@ -218,6 +218,7 @@ button {
         top: -7px;
     }
 }
+
 /*HEADER*/
 
 /*MAIN*/
@@ -329,5 +330,82 @@ button {
         width: 60%;
     }
 }
+
 /*CONTENT_KINGBURGER*/
+.content_kingburgerl {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 4em;
+    height: 12em;
+}
+
+.content_kingburgerl__list {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    list-style: none;
+    background: rgb(255, 255, 255);
+    border-radius: 1em;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 40%;
+}
+
+.content_kingburgerl__list-item {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_kingburgerl__list-itemwritten {
+    display: flex;
+    flex-direction: column;
+}
+
+.content_kingburgerl__list-itemwritten h1 {
+    font-family: 'Lilita One';
+    text-transform: uppercase;
+    color: rgba(29, 6, 5, 0.9);
+}
+
+.content_kingburgerl__list-itemwritten p {
+    font-family: 'inter';
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+
+.line_seperation {
+    position: relative;
+    width: 0px;
+    height: 83.53px;
+    right: -5em;
+    top: 0.5em;
+
+    border: 1px solid rgba(73, 46, 21, 0.15);
+}
+
 /*MAIN*/
+
+
+.content_specialoffers {
+    display: grid;
+    place-items: center;
+}
+
+.content_specialoffers__imgs {
+    display: grid;
+    grid-template-areas: "side content content";
+    place-items: center;
+    gap: 4em;
+}
+
+.content_specialoffers__imgs ul {
+    list-style: none;
+}
+
+.content_specialoffers__imgs li {
+    margin-top: 1em;
+}
