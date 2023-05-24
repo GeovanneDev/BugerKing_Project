@@ -387,12 +387,52 @@ button {
     border: 1px solid rgba(73, 46, 21, 0.15);
 }
 
+@media (max-width: 768px) {
+    .content_kingburgerl__list {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      position: absolute;
+      width: 355.57px;
+      height: 322.97px;
+    }
+  
+    .content_kingburgerl__list-item {
+      text-align: center;
+    }
+  
+    .content_kingburgerl__list-itemwritten {
+      margin-top: 20px;
+    }
+
+    .line_seperation{
+        display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content_kingburgerl__list-item h1 {
+      font-size: 2rem;
+    }
+  
+    .content_kingburgerl__list-item p {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
 /*MAIN*/
 
 
+/*CONTENT_SPECIALOFFERS*/
 .content_specialoffers {
     display: grid;
     place-items: center;
+}
+
+.content_specialoffers-written {
+    margin-inline-end: 15em;
+    padding: 4em;
+    line-height: 4em;
 }
 
 .content_specialoffers__imgs {
@@ -409,3 +449,18 @@ button {
 .content_specialoffers__imgs li {
     margin-top: 1em;
 }
+
+.content_specialoffers-written__title {
+    font-family: 'Lilita One';
+    color: rgba(29, 6, 5, 0.9);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(250, 1, 1);
+    font-size: 3.5rem;
+}
+
+.content_specialoffers-written__text {
+    font-family: 'inter';
+    font-size: 2rem;
+    font-weight: 400;
+}
+/*CONTENT_SPECIALOFFERS*/                                   
