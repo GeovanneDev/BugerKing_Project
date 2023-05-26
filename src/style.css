@@ -389,37 +389,38 @@ button {
 
 @media (max-width: 768px) {
     .content_kingburgerl__list {
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-      position: absolute;
-      width: 355.57px;
-      height: 322.97px;
-    }
-  
-    .content_kingburgerl__list-item {
-      text-align: center;
-    }
-  
-    .content_kingburgerl__list-itemwritten {
-      margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        position: absolute;
+        width: 355.57px;
+        height: 322.97px;
     }
 
-    .line_seperation{
+    .content_kingburgerl__list-item {
+        text-align: center;
+    }
+
+    .content_kingburgerl__list-itemwritten {
+        margin-top: 20px;
+    }
+
+    .line_seperation {
         display: none;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .content_kingburgerl__list-item h1 {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     .content_kingburgerl__list-item p {
-      font-size: 1.5rem;
-      font-weight: 500;
+        font-size: 1.5rem;
+        font-weight: 500;
     }
-  }
+}
+
 /*MAIN*/
 
 
@@ -463,4 +464,89 @@ button {
     font-size: 2rem;
     font-weight: 400;
 }
-/*CONTENT_SPECIALOFFERS*/                                   
+/* @media (max-width: 768px) {
+    .content_specialoffers {
+        display: flex;
+        flex-direction: column;
+        padding: 20em;
+    }
+    
+
+    .content_specialoffers__imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content_specialoffers__imgs img {
+        display: grid;
+        place-items: center;
+        max-width: 100%;
+       
+    }
+
+    .content_kingburgerl__list-itemwritten {
+        margin-top: 20px;
+    }
+
+    .line_seperation {
+        display: none;
+    }
+} */
+/*CONTENT_SPECIALOFFERS*/
+
+/*CONTENT_SPECIALOFFERS-TIME*/
+.content_specialoffers-time {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4em;
+    margin-right: 30em;
+    gap: 5em;
+}
+
+.content_specialoffers-time1 {
+    text-align: center;
+    position: relative;
+    background: #F43127;
+    border-radius: 1em;
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 5px 5px 0px rgba(250, 0, 0, 0.75);
+}
+
+.content_specialoffers-time1 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-top: 0.5em;
+    font-family: 'Lilita One';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: rgba(29, 6, 5, 0.69);
+}
+
+.content_specialoffers-time1 p {
+    font-family: 'inter';
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.content_specialoffers-time2 p {
+    font-family: 'inter';
+    font-size: 2em;
+    color: var(--text);
+}
+
+.content_specialoffers-time2 span {
+    font-family: 'Lilita One';
+    color: #F43127;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.2em;
+}
+/*CONTENT_SPECIALOFFERS-TIME*/
